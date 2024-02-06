@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" id="logo" alt="logo">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="product.html">product</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="accountpage.html">account</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="25px" alt="">
+            <img src="images/menu.png" alt="" id="menulogo" onclick="menutoggle()">
+            <label class="switch-toggle">
+                <input type="checkbox" class="checkbox">
+                <span class="switch-btn"></span>
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- ------------------------single product details------- -->
+
+    <div class="smallcontainer singleproduct">
+        <div class="row">
+            <div class="col1">
+                <img src="images/gallery-1.jpg" alt="" width="100%" id="productimg">
+                <div class="smallimgrow">
+                    <div class="smallimgcol">
+                        <img src="images/gallery-1.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class=" smallimgcol ">
+                        <img src="images/gallery-2.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class=" smallimgcol ">
+                        <img src="images/gallery-3.jpg" class="smallimg">
+                    </div>
+                    <div class=" smallimgcol ">
+                        <img src="images/gallery-4.jpg" class="smallimg">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class=" col1 ">
+                <p>Home/T-shirt</p>
+                <h1>Red Printed T-shirt By Hrx</h1>
+                <h4>$50.00</h4>
+                <select name=" " id=" ">
+                    <option value=" ">select size</option>
+                    <option value=" ">XXL</option>
+                    <option value=" ">XL</option>
+                    <option value=" ">Large</option>
+                    <option value=" ">medium</option>
+                    <option value=" "></option>small</option>
+                </select>
+                <input type=" number " value=" 1 ">
+                <a href=" " class=" btn ">Add to cart</a>
+                <h3>Product Details</h3>
+                <br>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ab.Lorem ipsum dolor sit, amet onsectetur adipisicing elit. Pariatur corporis unde cupiditate error voluptas consequatur, dolorem autem? Deserunt, natus velit?</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=" smallcontainer ">
+
+        <div class=" row ">
+
+
+            <div class=" col3 ">
+                <img src=" images/product-9.jpg " alt=" ">
+                <h4>black shoes</h4>
+                <p>$50.00</p>
+
+            </div>
+
+
+            <div class=" col3 ">
+                <img src=" images/product-10.jpg " alt=" ">
+                <h4>pant</h4>
+                <p>$50.00</p>
+
+            </div>
+
+
+            <div class=" col3 ">
+                <img src=" images/product-11.jpg " alt=" ">
+                <h4>blue Printed T-Shirt</h4>
+                <p>$50.00</p>
+
+            </div>
+            <div class=" col3 ">
+                <img src=" images/product-12.jpg " alt=" ">
+                <h4>Red Printed T-Shirt</h4>
+                <p>$50.00</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- -----footer--
+ -->
+    <div class=" footer ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" footcol1 ">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android And Ios mobile Phone</p>
+                    <div class=" applogo ">
+                        <img src=" images/play-store.png " alt=" ">
+                        <img src=" images/app-store.png " alt=" ">
+                    </div>
+                </div>
+                <div class=" footcol2 ">
+                    <img src=" images/logo-white.png " alt=" ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aut.</p>
+                </div>
+
+                <div class=" footcol3 ">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join affilicate</li>
+                    </ul>
+
+                </div>
+                <div class=" footcol4 ">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook </li>
+
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+            <p class=" copyright ">copyright 2021 - moneyferb</p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        let menuitems = document.getElementById("menuitems");
+        // menuitems.style.maxHeight = " 0px ";
+
+
+
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+
+                menuitems.style.maxHeight = "200px"
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+    // ----js for priduct gallery----
+    <script>
+        var productimg = document.getElementById("productimg");
+        var smallimg = document.getElementsByClassName("smallimg");
+        smallimg[0].onclick = function() {
+            productimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            productimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            productimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            productimg.src = smallimg[3].src;
+        }
+    </script>
+
+
+</body>
+
+</html>
